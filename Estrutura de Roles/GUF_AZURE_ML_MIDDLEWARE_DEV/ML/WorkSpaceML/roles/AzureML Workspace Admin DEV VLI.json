@@ -1,0 +1,26 @@
+{
+    "id": "/subscriptions/03dff922-7a79-49b8-a26e-e6c9ce78430d/providers/Microsoft.Authorization/roleDefinitions/c3dbc6be-df95-4ac5-8ade-3923a1ab0345",
+    "properties": {
+        "roleName": "AzureML Workspace Admin DEV VLI",
+        "description": "Grupo de função para administração de machine learning no Workspace VLI.",
+        "assignableScopes": [
+            "/subscriptions/03dff922-7a79-49b8-a26e-e6c9ce78430d"
+        ],
+        "permissions": [
+            {
+                "actions": [
+                    "Microsoft.MachineLearningServices/workspaces/*/read",
+                    "Microsoft.MachineLearningServices/workspaces/*/action",
+                    "Microsoft.MachineLearningServices/workspaces/*/write",
+                    "Microsoft.MachineLearningServices/workspaces/*/delete",
+                    "Microsoft.Authorization/roleAssignments/*"
+                ],
+                "notActions": [
+                    "Microsoft.MachineLearningServices/workspaces/write"
+                ],
+                "dataActions": [],
+                "notDataActions": []
+            }
+        ]
+    }
+}

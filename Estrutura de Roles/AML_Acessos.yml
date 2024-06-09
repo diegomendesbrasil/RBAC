@@ -1,0 +1,53 @@
+Estrutura_de_Roles:
+  GUF_AZURE_DATAENGINEER_DEV:
+    Synapse: {}
+  GUF_AZURE_DATASCIENCE_DEV:
+    ML:
+      StorageML:
+        dev:
+          roles:
+            - Reader.json
+            - Storage Blob Data Contributor.json
+        hml:
+          roles:
+            - Reader.json
+      WorkSpaceML:
+        dev:
+          roles:
+            - AzureML Data Scientist.json
+        hml:
+          roles:
+            - Monitoring Reader.json
+  GUF_AZURE_DATASCIENCE_PRD:
+    ML:
+      StorageML:
+        roles:
+          - Reader.json
+      WorkSpaceML:
+        roles:
+          - Monitoring Reader.json
+          - Reader.json
+  GUF_AZURE_ML_MIDDLEWARE_DEV:
+    ML:
+      StorageML:
+        roles:
+          - Reader.json
+          - Storage Blob Data Contributor.json
+      WorkSpaceML:
+        roles:
+          - AzureML Compute Operator.json
+          - AzureML Data Scientist.json
+          - AzureML Workspace Admin DEV VLI.json
+          - Data Labeling – Labeler.json
+          - Monitoring Reader.json
+          - Reader.json
+    Synapse: {}
+  GUF_AZURE_ML_MIDDLEWARE_PRD:
+    ML:
+      StorageML:
+        roles:
+          - Reader.json
+      WorkSpaceML:
+        roles:
+          - Monitoring Reader.json
+          - Reader.json

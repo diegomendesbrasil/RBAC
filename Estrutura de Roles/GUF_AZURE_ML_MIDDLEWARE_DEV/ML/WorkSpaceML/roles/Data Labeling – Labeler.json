@@ -1,0 +1,25 @@
+{
+    "id": "/providers/Microsoft.Authorization/roleDefinitions/c6decf44-fd0a-444c-a844-d653c394e7ab",
+    "properties": {
+        "roleName": "Data Labeling - Labeler",
+        "description": "Can label data in Labeling.",
+        "assignableScopes": [
+            "/"
+        ],
+        "permissions": [
+            {
+                "actions": [
+                    "Microsoft.MachineLearningServices/workspaces/read",
+                    "Microsoft.MachineLearningServices/workspaces/experiments/runs/read",
+                    "Microsoft.MachineLearningServices/workspaces/labeling/projects/read",
+                    "Microsoft.MachineLearningServices/workspaces/labeling/projects/summary/read",
+                    "Microsoft.MachineLearningServices/workspaces/labeling/labels/read",
+                    "Microsoft.MachineLearningServices/workspaces/labeling/labels/write"
+                ],
+                "notActions": [],
+                "dataActions": [],
+                "notDataActions": []
+            }
+        ]
+    }
+}
